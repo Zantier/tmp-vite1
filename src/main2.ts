@@ -4,7 +4,7 @@ import data_url from './mydata.json?url'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    This page is /main2/. <a href="/">Go to /</a>
+    This page is /main2/. <a href="${import.meta.env.BASE_URL}">Go to /</a>
   </div>
   <div>
     The frog data is: ${data.frogs.join(', ')}
